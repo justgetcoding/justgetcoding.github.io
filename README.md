@@ -1,6 +1,6 @@
-spaceshot.github.io
+justgetcoding.github.io
 ===================
 
 GitHub Pages
 
-http://spaceshot.github.io
+http://justgetcoding.github.io
