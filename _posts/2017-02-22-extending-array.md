@@ -9,6 +9,7 @@ author: "Sean Hornsby"
 
 {{ page.title }}
 ================
+{{author}}
 
 Today we are going to talk about writing code that extends the core JavaScript functionality.
 It draws technique from polyfills (shims), and allows you to add new methods directly onto existing
@@ -22,7 +23,7 @@ them by unicode point order. Not what you are looking for when you pass it [15, 
 It is pretty simple to just supply sort with a comparison function, but it really isn't that much more difficult
 to extend Array with a new method built to sort numbers. That's just what we're going to do.
 
-The code used to compare numbers instead of strings is right in the MDN entry for sort(). It's the heart
+The code used to compare numbers instead of strings is right in the MDN entry for sort() [link here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort "MDN Array.sort()"). It's the heart
 of what we are going to use. It looks like this:
 
 ```javascript
