@@ -37,6 +37,6 @@ The course is called "Building a Modern Computer from First Principles," and is 
 everything you need to follow along is <a href="http://www.nand2tetris.org/">here</a>.
 
 Tools I am using include:
-* VSCode
-* Logic.ly
-* The software downloads from the nand2tetris project.
+* [VSCode](https://code.visualstudio.com/download)
+* [Logic.ly](https://logic.ly/download/)
+* The [software downloads](http://www.nand2tetris.org/software.php) from the nand2tetris project.
