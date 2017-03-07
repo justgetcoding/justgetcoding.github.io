@@ -20,7 +20,7 @@ topics (one I cover in other posts). At an even lower level, perhaps the lowest 
 the topic of how computers compute.
 
 I was fully aware of my ignorance on that subject, but also satisfied that it wasn't necessary
-to learn all of that CS stuff in order to be a good programmer. I still fell like this is
+to learn all of that CS stuff in order to be a good programmer. I still feel like this is
 probably true, but I've come to realize two things. First, I don't want to be a good programmer,
 I want to be a great programmer. Second, it is going to help get better at acquiring every other
 skill I want/need. Anything that makes programming less mysterious, makes the programmer more
@@ -34,4 +34,9 @@ I completed, the more I began to think about how I could apply these lessons on 
 the next weeks, I am going to be writing a series on this course and my progression through it. 
 
 The course is called "Building a Modern Computer from First Principles," and is referred to as, "Nand2Tetris," and
-everything you need to follow along is <a href="https://http://www.nand2tetris.org/">here</a>.
+everything you need to follow along is <a href="http://www.nand2tetris.org/">here</a>.
+
+Tools I am using include:
+* VSCode
+* Logic.ly
+* The software downloads from the nand2tetris project.
