@@ -11,6 +11,8 @@ author: "Sean Hornsby"
 ================
 {{author}}
 
+(../images/EoC1.png)
+
 As a programmer with no formal training, I am always looking for ways
 to pick up more CS fundamentals. Getting practical programming concepts is "easy,"
 just start working on projects. You will develop some sort of competence rapidly.
