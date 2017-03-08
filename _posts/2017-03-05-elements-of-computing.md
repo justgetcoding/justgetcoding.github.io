@@ -42,3 +42,51 @@ Tools I am using include:
 * [VSCode](https://code.visualstudio.com/download)
 * [Logic.ly](https://logic.ly/download/)
 * The [software downloads](http://www.nand2tetris.org/software.php) from the nand2tetris project.
+
+Before we jump into the project work, there are a few other things to cover. I am
+mainly a JavaScript programmer, so the file formats involved were new to me. That
+said, they use pretty straightforward syntax. Writing the code for the chips happens
+in a Hardware Descritpion Language (HDL). The HDL files are run with the included
+Hardware Simulator. Here is an example HDL file
+
+```
+/**
+ * Not gate:
+ * out = not in
+ */
+
+CHIP Not {
+    IN in;
+    OUT out;
+
+    PARTS:
+    // Put your code here:
+}
+```
+
+It starts with a documentation comment block. First line is the type of chip. The next
+lines (only one in this case) describe the logic of the chip. Here, for the Not Gate,
+'out' should equal the opposite of in.
+
+Next is the implmentation. We are making a new CHIP called Not. Then we declare the
+inputs and outputs of the chip. These are the parts that will be exposed, the interface.
+PARTS will hold the logic. Throughout the course, we will be building up a library of
+parts that we can then use in successive chip programs.
+
+Once the chip is built, we can open it in the Hardware Simulator and run its tests. Let's
+take a look at the HS now:
+
+![Hardware Simulator](/images/HS-intro.png){:class="img-responsive"}
+
+Load the chip in by clicking the chip icon in the top left or using the File dropdown.
+Load the test by clicking on the scroll icon (next to the red flag) or 'Load Script'
+in the File dropdown. Run the test by clicking on the Run button or selecting Run from
+the Run dropdown (how many times can I say run in one sentence?). Messages show up on the
+very bottom of the simulator. What you are looking for is "End of Script - Comparison
+ended successfully." This is just an overview, we'll cover failures and other messages
+in another post.
+
+That's it. That's all you need to follow this course. I use one more tool for convenience,
+a program called Logicly (linked above). It makes visualizing and actualizing the chips
+a bit more user friendly. It has a free 30 day trial, and has helped me tremendously. I
+will cover its use in a separate post.
