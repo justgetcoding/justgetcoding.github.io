@@ -11,7 +11,7 @@ author: "Sean Hornsby"
 ================
 {{author}}
 
-![Splash](../images/EoC1.png){:class="img-responsive"}
+![Splash](/images/EoC1.png){:class="img-responsive"}
 
 As a programmer with no formal training, I am always looking for ways
 to pick up more CS fundamentals. Getting practical programming concepts is "easy,"
