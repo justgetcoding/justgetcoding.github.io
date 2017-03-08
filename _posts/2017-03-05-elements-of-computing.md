@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Elements of Computing - Intro"
-date:   2017-03-01 10:10:45 -0800
+date:   2017-03-05 10:10:45 -0800
 categories: intro
 image: gates.png
 author: "Sean Hornsby"
