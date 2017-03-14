@@ -43,7 +43,7 @@ Tools I am using include:
 * [Logic.ly](https://logic.ly/download/)
 * The [software downloads](http://www.nand2tetris.org/software.php) from the nand2tetris project.
 
-Before we jump into the project work, there are a few other things to cover. I am
+Before I jump into the project work, there are a few other things to cover. I am
 mainly a JavaScript programmer, so the file formats involved were new to me. That
 said, they use pretty straightforward syntax. Writing the code for the chips happens
 in a Hardware Descritpion Language (HDL). The HDL files are run with the included
@@ -68,12 +68,12 @@ It starts with a documentation comment block. First line is the type of chip. Th
 lines (only one in this case) describe the logic of the chip. Here, for the Not Gate,
 'out' should equal the opposite of in.
 
-Next is the implmentation. We are making a new CHIP called Not. Then we declare the
-inputs and outputs of the chip. These are the parts that will be exposed, the interface.
-PARTS will hold the logic. Throughout the course, we will be building up a library of
-parts that we can then use in successive chip programs.
+Next is the implmentation. I am going to make a new CHIP called Not. Inside the brackets the
+inputs and outputs are named and described, these are the parts that will be exposed, the interface.
+PARTS will hold the logic. As the course progresses, I will be building more and more chips. Once a
+chip is built (correctly, hopefully), I can use it in future chips.
 
-Once the chip is built, we can open it in the Hardware Simulator and run its tests. Let's
+To test a built chip, I can open it in the Hardware Simulator and run its tests. Let's
 take a look at the HS now:
 
 ![Hardware Simulator](/images/HS-intro.png){:class="img-responsive"}
@@ -86,7 +86,7 @@ very bottom of the simulator. What you are looking for is "End of Script - Compa
 ended successfully." This is just an overview, we'll cover failures and other messages
 in another post.
 
-That's it. That's all you need to follow this course. I use one more tool for convenience,
+I use one more tool for convenience,
 a program called Logicly (linked above). It makes visualizing and actualizing the chips
 a bit more user friendly. It has a free 30 day trial, and has helped me tremendously. I
 will cover its use in a separate post.
