@@ -18,7 +18,7 @@ email: sean@justgetcoding.com
 description: > # this means to ignore newlines until "baseurl:"
   You want to be a coder, you have to code.
   The more you code, the more you learn about code, so just get coding!
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://justgetcoding.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: justgetcoding
 github_username:  justgetcoding
