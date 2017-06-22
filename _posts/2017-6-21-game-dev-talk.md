@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Intro to Game Development - Meta"
+title:  "Intro to Intro to Game Development"
 date:   2017-06-21 10:10:45 -0800
 categories: intro
 image: game.png
