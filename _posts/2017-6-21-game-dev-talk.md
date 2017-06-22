@@ -3,7 +3,7 @@ layout: post
 title:  "Intro to Game Development - Meta"
 date:   2017-06-21 10:10:45 -0800
 categories: intro
-image: code01.png
+image: game.png
 author: "Sean Hornsby"
 ---
 
