@@ -16,6 +16,7 @@ Chris has been writing software professionally since 1993. His day jobs have inc
 
 # Sean Hornsby 
 
-BlurbBio
+Sean has been writing software professionally since August 2016! Most recently he created a MERN stack web application for a startup in Orange County. He is also a featured speaker at JavascriptLA meetups.
 
-* Twitter: {% include icon-github.html username="SPHornsby" %}
+* Twitter: {% include icon-twitter.html username="Mushiwulf" %}
+* GitHub: {% include icon-github.html username="SPHornsby" %}
