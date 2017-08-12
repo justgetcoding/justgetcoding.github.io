@@ -88,6 +88,6 @@ Object literals are a collection of key:value pairs.
 // the value can be a primative, as above, or an object
 {username: "Tom", address: {street: "Fairchild", number: 217}, phone_numbers: [5551212, 5552121]}
 ```
-Functions are a special kind of object, but they are still objects. They aren't used to hold data, but they can _be_ data. We'll cover functions next.
-
 Arrays, object literals, and functions are the workhorses of JavaScript.
+
+Functions are a special kind of object, but they are still objects. They aren't used to hold data, but they can _be_ data. We'll cover functions next.
