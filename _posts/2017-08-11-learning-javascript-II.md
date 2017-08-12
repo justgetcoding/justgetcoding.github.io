@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Learning JavaScript II"
-date:   2017-08-10 10:10:45 -0800
+date:   2017-08-11 10:10:45 -0800
 categories: intro
 image: pic02.jpg
 author: "Sean Hornsby"
