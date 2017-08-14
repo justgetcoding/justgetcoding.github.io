@@ -11,40 +11,9 @@ author: "Sean Hornsby"
 ================
 {{author}}
 
-
-<style type="css/text">
-table {
-  padding: 0; }
-  table tr {
-    border-top: 1px solid #cccccc;
-    background-color: white;
-    margin: 0;
-    padding: 0; }
-    table tr:nth-child(2n) {
-      background-color: #f8f8f8; }
-    table tr th {
-      font-weight: bold;
-      border: 1px solid #cccccc;
-      text-align: left;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr td {
-      border: 1px solid #cccccc;
-      text-align: left;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr th :first-child, table tr td :first-child {
-      margin-top: 0; }
-    table tr th :last-child, table tr td :last-child {
-      margin-bottom: 0; }
-
-</style>
-
-
-
 Now that we know how to assign variables, and how to write functions, it is time to open the toolbox and see what is inside. JavaScript comes with some handy tools that we can use to do. These are mostly conditionals and loops, and there aren't actually that many.
 
-### If
+#### If
 The if statement performs a comparison and _if_ that comparison evaluates to true, the body of the statement runs. We need to learn the comparison operators too. Remember `=` is an assignment operator. If you try use it in a comparison, it will not work correctly. How then does one test for equality? `==` and `===` are the equality and strict equality operators. Equality: `==` will try to coerce the types of both items and will return true if it can. Strict equality `===` will not.
 
 `!=` and `!==` are the inequality versions of the above.
@@ -79,7 +48,7 @@ function complexComparison(x,y,z) {
 // and so on...
 ```
 
-### Else
+#### Else
 
 _Else_ is the back half of the _if_ statement. If you have more than one outcome, you can use else (but don't have to, see examples above). If you have more than two outcomes, you will use else. In the above examples I used a pattern that eliminates the need for else. I also did not wrap my statements in braces. I could have, and it would work fine. I would have, if they had been any more complex than they were. Let's see what that looks like.
 
@@ -114,13 +83,13 @@ function moreIfs(x,y) {
 
 When I have exhausted the alternate possibilities, I end the _if-else-if_ with a simple `else`. This works, logically, because I know what state the data is in by elimination.
 
-### Switch
+#### Switch
 
 Switch is an alternative to _else if_. It can be clearer to read and reason about in some cases.
 
 
 
-### For
+#### For
 
 The workaday for statement is the jumping off point for some of the more complex statements in JavaScript. There are more elegant loops, but it isn't a bad idea to try it with a simple for loop first and after you have it working, decide if there is a better tool to use. A _for_ statement takes three expressions and a statment. The syntax can look a lot like a function declaration, but look closely and you will see the statements are separated by semicolons instead of commas. This will be the cause of many errors if you are not careful. The statements are, in order, an initialization, a condition, and a final-expression. The first time through the loop, the initialization is run, then the conditional is checked, if it evaluates to true, the statement body is run and then the final-expression.
 
@@ -144,7 +113,7 @@ The loop begins and i is set to zero, that is less than 3, so the body runs. The
 
 Hopefully that all makes sense. There are other loop constructs that we will talk about in a future lesson, and more advanced ways to use the simple for loop, but this is enough for now.
 
-### While
+#### While
 
 While loops operate similarly to for loops. Unlike a for, they have no initializer or final-expression. This means you have to create the value for the initializer outside the loop. Incrementing (or decrementing, or changing in whatever way) the evaluated value is also up to you.
 
@@ -159,7 +128,7 @@ while (n < strings.length) {
 
 This produces the same output as the for loop above. Be aware, the value of `n` has been mutated. After the loop has run, n will equal 3, in this case.
 
-### Do (while)
+#### Do (while)
 
 Do...while is a flipped version of the do loop. It is guaranteed to run once. 
 
