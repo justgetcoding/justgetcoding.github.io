@@ -11,6 +11,37 @@ author: "Sean Hornsby"
 ================
 {{author}}
 
+
+<style type="css/text">
+table {
+  padding: 0; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+</style>
+
+
+
 Now that we know how to assign variables, and how to write functions, it is time to open the toolbox and see what is inside. JavaScript comes with some handy tools that we can use to do. These are mostly conditionals and loops, and there aren't actually that many.
 
 ### If
@@ -102,7 +133,7 @@ for (var i = 0; i < strings.length; i++) {
 ```
 In this loop, we are going to count up, starting with the initialized value, 0, and walk up until `i` is no longer less than `strings.length`. We didn't talk about it, but the data types have some methods and properties associated with them. Array has a property, length, that tallies the number of items in the array and returns that as a `number`. In this case, strings.length evaluates to 3. The final-expression, `i++`, is an incrementer. It adds 1 to the current value of `i`. Here is a table of the associated values as the loop runs:
 
-| _i_ | strings[i] |
+| _i_ | strings[_i_] |
 | --- | --- |
 |  0  | "a" |
 |  1  | "b" |
