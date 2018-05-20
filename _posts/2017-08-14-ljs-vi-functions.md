@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Learning Javascript VI - Functions"
-date:   2017-08-13 16:10:45 -0800
+date:   2017-08-14 12:10:45 -0800
 categories: intro
 image: pic02.jpg
 author: "Sean Hornsby"

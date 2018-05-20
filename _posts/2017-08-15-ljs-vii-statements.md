@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Learning Javascript VII - Statements"
-date:   2017-08-13 17:10:45 -0800
+date:   2017-08-15 12:10:45 -0800
 categories: intro
 image: pic02.jpg
 author: "Sean Hornsby"
