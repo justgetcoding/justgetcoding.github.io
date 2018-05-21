@@ -7,10 +7,6 @@ image: pic02.jpg
 author: "Sean Hornsby"
 ---
 
-{{ page.title }}
-================
-{{author}}
-
 This post comes from a conversation I had with my new friend Ahmed ([@ahmedbengayess](https://twitter.com/ahmedbgayess)). He very recently started to learn front end development. Some of the array methods were tripping him up, and I asked him to share the details of his struggles. It wasn't all that long ago that I was having similar struggles, and, to be honest, I still do.
 
 ##### Warning, my bias for functional programming and immutable data will clearly shine through here. It is just that, bias, so take it with a grain of salt. 

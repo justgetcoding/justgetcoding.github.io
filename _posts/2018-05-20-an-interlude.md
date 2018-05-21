@@ -7,9 +7,6 @@ image: pic02.jpg
 author: "Sean Hornsby"
 ---
 
-{{ page.title }}
-================
-{{author}}
 
 So, about a year ago I stopped working on personal projects. I left them, abandoned, to gather dust. I shouldn't have done this, no matter how compelling I thought my reasons were.
 
