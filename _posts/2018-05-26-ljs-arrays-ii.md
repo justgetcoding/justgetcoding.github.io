@@ -7,7 +7,7 @@ image: pic02.jpg
 author: "Sean Hornsby"
 ---
 
-In the last article, we covered the basics of arrays and a few of the methods they come bundled with in JavaScript. Before I dive much deeper I want to offer a couple caveats. There is way more depth to this topic than I have covered so far. I have definitely glossed over some of the concepts involved. I am not trying to present this as a comprehensive or complete set of lessons on the topic. What I *am* trying to do here is help people understand how to use array methods and hopefully glean some insight into how and why they work.
+In the last article, I covered the basics of arrays and a few of the methods they come bundled with in JavaScript. Before I dive much deeper I want to offer a couple caveats. There is way more depth to this topic than I have covered so far. I have definitely glossed over some of the concepts involved. I am not trying to present this as a comprehensive or complete set of lessons on the topic. What I *am* trying to do here is help people understand how to use array methods and hopefully glean some insight into how and why they work.
 
 Hopefully I find the right balance between oversimplified and understandable.
 
@@ -122,7 +122,7 @@ If initial value is passed, the accumulator will start with that value. The call
 
 In our case, on the first pass, the accumulator is set to 0 and the callback is given the first element, 1. The body of the function adds those values together and returns 1. The accumulator is set to that value and the callback runs with the next element of the array. So on the second pass, the callback gets 1 (the accumulator), and 2 (the value of the second element). The function adds those together and returns 3. The accumulator is set to 3 and the callback runs again with 3 (the accumulator), and 3 (the value of the third element). This continues until there are no more elements, at which point the method returns the accumulator.
 
-Here is what that looks like in table form.
+ Here is what that looks like in table form.
 
 | Accumulator | i *(current value)*| return value|
 |--|--|--|
@@ -143,3 +143,26 @@ What happens if we **do not** pass an `initialValue`? In that case, `.reduce()` 
 | 3 | 3 | 6 |
 | 6 | 4 | 10 |
 | 10 | 5 | 15 |
+
+That is probably the simplest use case and result for `.reduce()`, and it is a good place to start. It really is the tip of the iceberg though. Remember how the definition says that reduce returns a *single value*? It is very easy to get trapped by that definition into thinking that it will always return a *simple* value. This is not true. That value can be anything. In our case we got back a single integer. It could have been a string. It could be an array, or an object. In fact, both `.map()`, and `.filter()` are just forms of `.reduce()` That blew my mind. Here is the `.map()` call we made earlier in the article as a `.reduce()`
+
+```javascript
+let arr = [1,2,3,4,5];
+
+let  fakeMap  =  arr.reduce(function(accumulator,  curr)  {
+  return  acc.concat(curr  *  curr);
+}, []) // [1, 4, 9, 16, 25]
+```
+
+And the filter:
+
+```javascript
+let  fakeFilter  =  arr.reduce(function(accumulator,  curr)  {
+  if (curr  >  3) { 
+    return  accumulator.concat(curr)
+  }
+  return  accumulator;
+},[]) // [4, 5]
+```
+
+Building on how we know the first reducer (the sum of values) works, see if you can figure out how the map and filter reducers work. Reach out to me with any questions. I'll pick it up again here next time, along with a discussion on how `.sort()` is nowhere near as simple as it sounds.
